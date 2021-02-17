@@ -1,0 +1,138 @@
+.cardsContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: OpenSans-Bold;
+    font-size: 10px;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 1248px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);
+    border-radius: 4px;
+    color: #2E3134;
+    height: 280px;
+    margin: 0 12px 24px;
+    width: 288px;
+}
+
+.card.active {
+    animation-duration: .5s;
+    animation-name: activate;
+    box-shadow: 0 7px 12px 0 rgba(46,49,52,0.30);
+
+}
+
+@keyframes activate {
+    from {
+        box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);
+    }
+    to {
+        box-shadow: 0 7px 12px 0 rgba(46,49,52,0.30);
+    }
+}
+
+.imgCon {
+    position: relative;
+}
+
+.imgCon img {
+    border-radius: 4px 4px 0 0;
+    display: block;
+    width: 100%;
+}
+
+.imgCon .seriesWorkouts {
+    align-items: center;
+    background: rgba(0,12,40,0.54);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: OpenSans-Bold;
+    font-size: 1em;
+    justify-content: center;
+    line-height: 1.2em;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 42.3611111111111%;
+    text-align: center;
+
+    /* background: rgba(0,12,40,0.54);
+    font-family: OpenSans-ExtraBold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    font-family: OpenSans-Bold;
+    font-size: 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.3px;
+    line-height: 12px; */
+}
+
+.imgCon .seriesWorkouts .text {
+    margin: 7px 0 9px;
+}
+
+.imgCon .lNum {
+    font-size: 2.4em;
+    line-height: 30px;
+}
+
+.cardContent {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.6em;
+}
+
+.cardContent h3 {
+    font-size: 1.6em;
+    line-height: 1.125;
+    margin: 0;
+}
+
+.cardContent .textContent {
+    margin-right: 16px;
+}
+
+.cardContent .textContent img {
+    display: block;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.cardContent .textContent .workoutDetails {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    justify-content: flex-start;
+    margin: .4em 0 .7em;
+}
+
+.cardContent .textContent .workoutDetails div {
+    margin: 0 4px 0 0;
+}
+
+.cardContent .trainer img {
+    display: block;
+    height: 2.8em;
+    width: 2.8em;
+}
+
+.cardCta {
+    color: #0069D2;
+    font-size: 1.4em;
+    line-height: 1.142857142857143;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
